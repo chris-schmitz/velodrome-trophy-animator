@@ -1,7 +1,7 @@
 from typing import Tuple
 
 from src.colors import BLACK
-from src.lane_managers.AbstractLaneAnimation import AbstractLaneAnimation, Frame
+from src.lane_animations.AbstractLaneAnimation import AbstractLaneAnimation, Frame
 
 
 class PixelChaseLaneAnimation(AbstractLaneAnimation):

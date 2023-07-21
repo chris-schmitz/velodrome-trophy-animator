@@ -1,7 +1,7 @@
-from src.TrackAnimator import TrackAnimator
 from src.colors import RED, BLACK, GREEN, BLUE
-from src.lane_managers.FrameAnimation import FrameAnimation
-from src.lane_managers.PixelChaseLaneAnimation import PixelChaseLaneAnimation
+from src.lane_animations.FrameAnimation import FrameAnimation
+from src.lane_animations.PixelChaseLaneAnimation import PixelChaseLaneAnimation
+from src.track_animator.TrackAnimator import TrackAnimator
 
 
 class TestSuite:
