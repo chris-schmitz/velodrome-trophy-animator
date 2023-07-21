@@ -1,12 +1,7 @@
-from typing import Tuple
-
-from src.lane_animations.AbstractLaneAnimation import AbstractLaneAnimation, Frame
-
-
-class FrameAnimation(AbstractLaneAnimation):
-    def __init__(self, total_leds: int, *frames: Frame):
+class FrameAnimation:
+    def __init__(self, total_leds: int, *frames):
         self.total_leds: int = total_leds
-        self.frames: Tuple[Frame] = frames
+        self.frames = frames
         self.active_frame: int = 0
 
     def advance_animation(self):
@@ -15,5 +10,5 @@ class FrameAnimation(AbstractLaneAnimation):
         else:
             self.active_frame += 1
 
-    def get_state(self) -> Frame:
+    def get_state(self):
         return self.frames[self.active_frame]
